@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Backpack {
+  string string1 = 1;
+  int32 integer1 = 2;
+  int32 integer2 = 3;
+}
