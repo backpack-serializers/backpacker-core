@@ -28,16 +28,16 @@ createProtoRows float float
 createProtoRows bytes bytes
 
 createProtoRows int32 integer
-createProtoRows uint32 unsignedInteger
-createProtoRows sint32 signedInteger
-createProtoRows fixed32 fixedInteger
-createProtoRows sfixed32 signedFixedInteger
+#createProtoRows uint32 unsignedInteger
+#createProtoRows sint32 signedInteger
+#createProtoRows fixed32 fixedInteger
+#createProtoRows sfixed32 signedFixedInteger
 
 createProtoRows int64 long
-createProtoRows uint64 unsignedLong
-createProtoRows sint64 signedLong
-createProtoRows fixed64 fixedLong
-createProtoRows sfixed64 signedFixedLong
+#createProtoRows uint64 unsignedLong
+#createProtoRows sint64 signedLong
+#createProtoRows fixed64 fixedLong
+#createProtoRows sfixed64 signedFixedLong
 
 out=$out"\n}"
 
