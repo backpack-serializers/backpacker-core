@@ -1,11 +1,11 @@
 #!/bin/sh
 echo "Removing old backpack.proto file..."
-rm -rf ../backpack.proto
+rm -rf backpack.proto
 
 out="syntax = \"proto3\";"
-out=$out"\nmessage Backpack {"
+out=$out"\nmessage BackpackMessage {"
 
-positionsByType=100
+positionsByType=20
 position=1
 
 incrementPosition(){
@@ -25,21 +25,10 @@ createProtoRows bool boolean
 createProtoRows string string
 createProtoRows double double
 createProtoRows float float
-createProtoRows bytes bytes
-
 createProtoRows int32 integer
-#createProtoRows uint32 unsignedInteger
-#createProtoRows sint32 signedInteger
-#createProtoRows fixed32 fixedInteger
-#createProtoRows sfixed32 signedFixedInteger
-
 createProtoRows int64 long
-#createProtoRows uint64 unsignedLong
-#createProtoRows sint64 signedLong
-#createProtoRows fixed64 fixedLong
-#createProtoRows sfixed64 signedFixedLong
 
 out=$out"\n}"
 
-echo $out >> ../backpack.proto
+echo $out >> backpack.proto
 echo "Proto file generated!"
